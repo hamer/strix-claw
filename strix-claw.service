@@ -1,0 +1,11 @@
+[Unit]
+Description=Strix Claw hang-prevention daemon
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/strix-claw
+Restart=Always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
