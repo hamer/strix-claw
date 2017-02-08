@@ -14,7 +14,7 @@ clean:
 	-rm -f $(PROG) $(OBJS) $(DEPS)
 
 $(PROG): $(OBJS) $(DEPS)
-	$(CC) $(CFLAGS) $(OBJS) -o $@
+	$(CC) $(OBJS) $(CFLAGS) -o $@
 
 %.dep: %.c Makefile
 	$(CC) $(CFLAGS) -MMD -MP -MF $@ -c $<
