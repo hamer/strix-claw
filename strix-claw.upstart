@@ -1,0 +1,9 @@
+description "Strix Claw hang-prevention daemon"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+respawn limit 5 infinite
+
+exec /usr/local/bin/strix-claw
