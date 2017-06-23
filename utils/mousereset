@@ -1,0 +1,7 @@
+#!/bin/bash
+
+MPATH=`lsusb | grep 195d:1016 | sed 's/Bus \([^ ]\+\) Device \([^ ]\+\)\:.*/\1\/\2/'`
+
+if [ "x$MPATH" != "x" ]; then
+    usbreset /dev/bus/usb/$MPATH
+fi
