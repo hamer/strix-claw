@@ -1,7 +1,7 @@
 PROG=strix-claw
 
 CC=gcc
-CFLAGS=-std=gnu99 -W -Wall -Werror -lusb-1.0
+CFLAGS=-std=gnu11 -W -Wall -Werror -lusb-1.0
 
 SOURCES := $(wildcard *.c)
 OBJS := $(patsubst %.c, %.o,$(SOURCES))
