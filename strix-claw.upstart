@@ -1,4 +1,4 @@
-description "Strix Claw hang-prevention daemon"
+description "Itron Technology mice hang-prevention daemon"
 
 start on runlevel [2345]
 stop on runlevel [!2345]
