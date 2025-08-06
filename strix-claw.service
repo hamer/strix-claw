@@ -1,5 +1,5 @@
 [Unit]
-Description=Strix Claw hang-prevention daemon
+Description=Itron Technology mice hang-prevention daemon
 
 [Service]
 User=root

@@ -1,7 +1,8 @@
 # strix-claw
-This is an userspace utility for prevention of hanging Strix Claw mouse when DPI
-or side buttons are pressed.  are pressed. It reads events from interface 2, which
+This is an userspace utility for prevention of hanging Itron Technology mice when DPI
+or side buttons are pressed. It reads events from interface 2, which
 is commonly used for additional features for mices and keyboards.
+
 
 As an example, a part of `lsusb` and `lsusb -t` with Strix Tactic Pro and Strix Claw:
 
@@ -47,5 +48,4 @@ To install strix-claw to your system:
     # systemctl start strix-claw.service
 
 ## TODO
- * support of multiple devices simulatenously
  * implement a kernel module or patch usbhid subsystem
